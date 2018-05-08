@@ -1,0 +1,625 @@
+.V .squareV-1-fast-active{
+	animation: elongateV-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateV-1-fast {
+	100% { 
+	height: 160px; 
+	transform: skew(18deg);
+	}
+
+}
+
+
+.V .squareV-2-fast-active{
+	animation: elongateV-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateV-2-fast {
+	100% { 
+	height: 160px; 
+	transform: skew(-18deg);
+	}
+
+}
+
+.I .squareI-1-fast-active{
+	animation: elongateI-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateI-1-fast {
+	100% { width: 80px; }
+
+}
+
+.I .squareI-2-fast-active{
+	animation: elongateI-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateI-2-fast {
+	100% { height: 110px; }
+
+}
+
+
+.I .squareI-3-fast-active{
+	animation: elongateI-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateI-3-fast {
+	100% { width: 80px; }
+
+}
+
+
+.S .squareS-1-fast-active{
+	animation: elongateS-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateS-1-fast {
+	100% { 
+		border-radius: 12px; 
+	}
+}
+
+
+.S .squareS-2-fast-active{
+	animation: elongateS-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateS-2-fast {
+	100% { width: 80px; }
+
+}
+
+
+.S .squareS-3-fast-active{
+	animation: elongateS-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes elongateS-3-fast {
+	100% { 	
+		height: 100px;		
+		transform: skew(32deg); 
+	}
+
+}
+
+
+.S .squareS-4-fast-active{
+	animation: elongateS-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+@keyframes elongateS-4-fast {
+	100% { width: 80px; }
+
+}
+
+
+.S .squareS-5-fast-active{
+	animation: elongateS-5-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 15s;
+}
+
+@keyframes elongateS-5-fast {
+	100% { 
+		border-radius: 12px; 
+	}
+}
+
+
+.T .squareT-1-fast-active{
+	animation: elongateT-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateT-1-fast {
+	100% { width: 136px; }
+
+}
+
+.T .squareT-2-fast-active{
+	animation: elongateT-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateT-2-fast {
+	100% { height: 130px; }
+
+}
+
+
+.O .squareO-1-fast-active{
+	animation: elongateO-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateO-1-fast {
+	100% { 
+		height: 160px; 
+		width: 136px;
+		border-radius: 68px;
+	}
+
+}
+
+
+.P .squareP-1-fast-active{
+	animation: elongateP-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateP-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.P .squareP-2-fast-active{
+	animation: elongateP-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateP-2-fast {
+	100% { 
+		height: 112px; 
+		width: 106px; 
+		border-radius: 53px;
+	}
+
+}
+
+
+.R .squareR-1-fast-active{
+	animation: elongateR-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateR-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.R .squareR-2-fast-active{
+	animation: elongateR-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateR-2-fast {
+	100% { 
+		height: 96px; 
+		width: 96px; 
+		border-radius: 48px;
+	}
+
+}
+
+.R .squareR-3-fast-active{
+	animation: elongateR-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes elongateR-3-fast {
+	100% { 
+		height: 60px; 
+		width: 26px; 
+		transform: skew(40deg);
+	}
+
+}
+
+
+.H .squareH-1-fast-active{
+	animation: elongate-H-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongate-H-1-fast {
+	100% { height: 160px; }
+}
+
+.H .squareH-2-fast-active{
+	animation: elongate-H-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongate-H-2-fast {
+	100% { width: 83px; }
+}
+
+.H .squareH-3-fast-active{
+	animation: elongate-H-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongate-H-3-fast {
+	100% { height: 160px; }
+}
+
+
+
+.N .squareN-1-fast-active{
+	animation: elongateN-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateN-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.N .squareN-2-fast-active{
+	animation: elongateN-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateN-2-fast {
+	100% { 
+		height: 160px;
+		transform: skew(25deg);
+	 }
+
+}
+
+
+.N .squareN-3-fast-active{
+	animation: elongateN-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateN-3-fast {
+	100% { height: 160px; }
+
+}
+
+
+.W .squareW-1-fast-active{
+	animation: elongateW-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateW-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.W .squareW-2-fast-active{
+	animation: elongateW-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateW-2-fast {
+	100% { 
+	height: 110px;
+	transform: skew(-22deg);
+	 }
+
+}
+
+
+.W .squareW-3-fast-active{
+	animation: elongateW-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateW-3-fast {
+	100% { 
+	height: 110px;
+	transform: skew(22deg);
+	 }
+
+}
+
+
+
+.W .squareW-4-fast-active{
+	animation: elongateW-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+@keyframes elongateW-4-fast {
+	100% { height: 160px; }
+
+}
+
+
+
+.L .squareL-1-fast-active{
+	animation: elongateL-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateL-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.L .squareL-2-fast-active{
+	animation: elongateL-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateL-2-fast {
+	100% { width: 85px; }
+
+}
+
+
+
+.E .squareE-1-fast-active{
+	animation: elongateE-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateE-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.E .squareE-2-fast-active{
+	animation: elongateE-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateE-2-fast {
+	100% { width: 90px; }
+
+}
+
+
+.E .squareE-3-fast-active{
+	animation: elongateE-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateE-3-fast {
+	100% { width: 60px; }
+
+}
+
+
+.E .squareE-4-fast-active{
+	animation: elongateE-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+@keyframes elongateE-4-fast {
+	100% { width: 90px; }
+
+}
+
+
+.D .squareD-1-fast-active{
+	animation: elongateD-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateD-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.D .squareD-2-fast-active{
+	animation: elongateD-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateD-2-fast {
+	100% { 
+	width: 106px;
+	height: 160px; 
+	border-top-right-radius: 160px;
+	border-bottom-right-radius: 160px;
+	}
+
+}
+
+
+.B .squareB-1-fast-active{
+	animation: elongateB-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateB-1-fast {
+	100% { height: 160px; }
+
+}
+
+
+.B .squareB-2-fast-active{
+	animation: elongateB-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateB-2-fast {
+	100% { 
+	width: 76px;
+	height: 76px; 
+	border-radius: 38px;
+	}
+
+}
+
+.B .squareB-3-fast-active{
+	animation: elongateB-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateB-3-fast {
+	100% { 
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	}
+
+}
+
+
+.G .squareG-1-fast-active{
+	animation: elongateG-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateG-1-fast {
+	100% { width: 106px; }
+
+}
+
+
+.G .squareG-2-fast-active{
+	animation: elongateG-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateG-2-fast {
+	100% { height: 160px; }
+
+}
+
+
+.G .squareG-3-fast-active{
+	animation: elongateG-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+	/*opacity: 0.5;*/
+}
+
+@keyframes elongateG-3-fast {
+	100% { width: 80px; }
+
+}
+
+
+.G .squareG-4-fast-active{
+	animation: elongateG-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+	/*opacity: 0.5;*/
+}
+
+@keyframes elongateG-4-fast {
+	100% { height: 65px; }
+
+}
+
+
+.G .squareG-5-fast-active{
+	animation: elongateG-5-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 15s;
+}
+
+@keyframes elongateG-5-fast {
+	100% { width: 65px; }
+
+}
+
+
+.A .squareA-1-fast-active{
+	animation: elongateA-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+
+}
+
+@keyframes elongateA-1-fast {
+	100% { 
+		height: 160px; 
+		transform: skew(22deg);
+	}
+
+}
+
+
+.A .squareA-2-fast-active{
+	animation: elongateA-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+
+}
+
+@keyframes elongateA-2-fast {
+	100% { 
+		height: 136px; 
+		transform: skew(-23deg);
+	}
+
+}
+
+
+.A .squareA-3-fast-active{
+	animation: elongateA-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes elongateA-3-fast {
+	100% { 
+		border-radius: 12px; 
+		
+	}
+
+
+
+
+
+

@@ -1,0 +1,1877 @@
+*{ 
+	font-family: sans-serif;
+	cursor: url('../img/loading_13pt.png'), default;
+	/*border: 1px dashed blue;*/
+ }
+
+body{
+	margin: 0;
+	margin-left: 40px;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.sentence-seperation1, .sentence-seperation2,.sentence-seperation3,.sentence-seperation4{
+	cursor: default;
+}
+
+/** .sentence-seperation,.sentence-seperation1, .sentence-seperation2,.sentence-seperation3,.sentence-seperation4{
+	border: 1px dotted orange;
+}
+
+
+* .border, * .border_firstLetter{ 
+	border: 1px solid black;
+}*/
+
+.start_fixed{
+	position: fixed;
+	top: 46%;
+    left: 43%;
+	font-size: 60px;
+	color: #fffcf9;
+	cursor: pointer;
+
+	/*border: 1px solid black;*/
+
+	animation: start_blink 5s infinite; 
+}
+
+@keyframes start_blink{
+	0% {color: #fffcf9;}
+	80% {color: #fffcf9;}
+	85% {color: #d10808;}
+	90% {color: #910707;}
+}
+
+.start_button{
+	width: 100%;
+	/*border: 2px solid grey;*/
+	margin-left: 30px;
+	margin-bottom: 60px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/*.start_button_colorchange{
+	animation: change 2s infinite;
+}
+
+@keyframes change{
+	0%{: opacity: 1;}
+	50%{: opacity: 0.5;}
+	100%{: opacity: 0;}
+}*/
+
+.line1 .bar,.line2 .bar,.line3 .bar,.line4 .bar {
+	opacity: 0;
+}
+
+
+.bar{
+	position: relative;
+	top: 0px;
+	left: 30px;
+	background: linear-gradient(to right, white, black);
+	width: 30px;
+	height: 30px;
+
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.bar_active{
+	animation: elongate 7s infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes elongate {
+	100% { width: 900px; }
+
+}
+
+.border_firstLetter{
+	position: relative;
+	left: 10px;
+	top: 20px;
+	width: 136px;
+	height: 160px;
+	display: inline-block;
+	margin-left: 176px;
+	margin-bottom: 50px;
+	/*opacity: 0.5;*/
+}
+
+
+.border{
+	position: relative;
+	left: 10px;
+	top: 20px;
+	width: 136px;
+	height: 160px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	/*opacity: 0.5;*/
+}
+
+.V .squareV-1, .V .squareV-1-fast, .V .squareV-1-rainbow{
+	position: absolute;
+	left: 26px;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background-color: black; 
+
+}
+
+.V .squareV-1-active{
+	animation: elongateV-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateV-1 {
+	100% { 
+	height: 160px; 
+	transform: skew(18deg);
+	}
+
+}
+
+.V .squareV-1-rainbow-active{
+	animation: elongateV-1-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateV-1-rainbow {
+	100% { 
+	height: 160px; 
+	transform: skew(18deg);
+	background: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.V .squareV-1-fast-active{
+	animation: elongateV-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateV-1-fast {
+	100% { 
+	height: 160px; 
+	transform: skew(18deg);
+	}
+
+}
+
+
+.V .squareV-2, .V .squareV-2-fast , .V .squareV-2-rainbow{
+	position: absolute;
+	right: 26px;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background-color: black; 
+}
+
+.V .squareV-2-active{
+	animation: elongateV-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateV-2 {
+	100% { 
+	height: 160px; 
+	transform: skew(-18deg);
+	}
+
+}
+
+.V .squareV-2-rainbow-active{
+	animation: elongateV-2-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateV-2-rainbow {
+	100% { 
+	height: 160px; 
+	transform: skew(-18deg);
+	background: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.V .squareV-2-fast-active{
+	animation: elongateV-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateV-2-fast {
+	100% { 
+	height: 160px; 
+	transform: skew(-18deg);
+	}
+
+}
+
+.I .squareI-1, .I .squareI-1-fast{
+	position: absolute;
+	left: 28px;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.I .squareI-1-active{
+	animation: elongateI-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateI-1 {
+	100% { width: 80px; }
+
+}
+
+.I .squareI-1-fast-active{
+	animation: elongateI-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateI-1-fast {
+	100% { width: 80px; }
+
+}
+
+.I .squareI-2, .I .squareI-2-fast{
+	position: absolute;
+	left: 56px;
+	top: 30px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.I .squareI-2-active{
+	animation: elongateI-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateI-2 {
+	100% { height: 110px; }
+
+}
+
+.I .squareI-2-fast-active{
+	animation: elongateI-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateI-2-fast {
+	100% { height: 110px; }
+
+}
+
+.I .squareI-3, .I .squareI-3-fast{
+	position: absolute;
+	left: 28px;
+	bottom: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.I .squareI-3-active{
+	animation: elongateI-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateI-3 {
+	100% { width: 80px; }
+
+}
+
+.I .squareI-3-fast-active{
+	animation: elongateI-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateI-3-fast {
+	100% { width: 80px; }
+
+}
+
+.S .squareS-1, .S .squareS-1-fast{
+	position: absolute;
+	left: 100px;
+	top: 30px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.S .squareS-1-active{
+	animation: elongateS-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateS-1 {
+	100% { 
+		border-radius: 12px; 
+	}
+}
+
+.S .squareS-1-fast-active{
+	animation: elongateS-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateS-1-fast {
+	100% { 
+		border-radius: 12px; 
+	}
+}
+
+.S .squareS-2, .S .squareS-2-fast{
+	position: absolute;
+	right: 28px;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.S .squareS-2-active{
+	animation: elongateS-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateS-2 {
+	100% { width: 80px; }
+
+}
+
+.S .squareS-2-fast-active{
+	animation: elongateS-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateS-2-fast {
+	100% { width: 80px; }
+
+}
+
+.S .squareS-3, .S .squareS-3-fast{
+	position: absolute;
+	left: 55px;
+	top: 30px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.S .squareS-3-active{
+	animation: elongateS-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+
+}
+
+@keyframes elongateS-3 {
+	100% { 	
+		height: 100px;		
+		transform: skew(32deg); 
+	}
+
+}
+
+.S .squareS-3-fast-active{
+	animation: elongateS-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes elongateS-3-fast {
+	100% { 	
+		height: 100px;		
+		transform: skew(32deg); 
+	}
+
+}
+
+.S .squareS-4, .S .squareS-4-fast{
+	position: absolute;
+	right: 28px;
+	bottom: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.S .squareS-4-active{
+	animation: elongateS-4 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 350s;
+}
+
+@keyframes elongateS-4 {
+	100% { width: 80px; }
+
+}
+
+.S .squareS-4-fast-active{
+	animation: elongateS-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+@keyframes elongateS-4-fast {
+	100% { width: 80px; }
+
+}
+
+.S .squareS-5, .S .squareS-5-fast{
+	position: absolute;
+	left: 12px;
+	bottom: 30px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.S .squareS-5-active{
+	animation: elongateS-5 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 470s;
+}
+
+@keyframes elongateS-5 {
+	100% { 
+		border-radius: 12px; 
+	}
+}
+
+.S .squareS-5-fast-active{
+	animation: elongateS-5-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 15s;
+}
+
+@keyframes elongateS-5-fast {
+	100% { 
+		border-radius: 12px; 
+	}
+}
+
+.T .squareT-1, .T .squareT-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.T .squareT-1-active{
+	animation: elongateT-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateT-1 {
+	100% { width: 136px; }
+
+}
+
+.T .squareT-1-fast-active{
+	animation: elongateT-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateT-1-fast {
+	100% { width: 136px; }
+
+}
+
+.T .squareT-2, .T .squareT-2-fast{
+	position: absolute;
+	left: 56px;
+	top: 30px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.T .squareT-2-active{
+	animation: elongateT-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateT-2 {
+	100% { height: 130px; }
+
+}
+
+.T .squareT-2-fast-active{
+	animation: elongateT-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateT-2-fast {
+	100% { height: 130px; }
+
+}
+
+.O .squareO-1, .O .squareO-1-fast, .O .squareO-1-rainbow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.O .squareO-1-active{
+	animation: elongateO-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateO-1 {
+	100% { 
+		height: 160px; 
+		width: 136px;
+		border-radius: 68px;
+	}
+
+}
+
+.O .squareO-1-rainbow-active{
+	animation: elongateO-1-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateO-1-rainbow {
+	100% { 
+		height: 160px; 
+		width: 136px;
+		border-radius: 68px;
+		background: radial-gradient(red, orange, yellow, green, blue, indigo, violet, violet);
+	}
+
+}
+
+.O .squareO-1-fast-active{
+	animation: elongateO-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateO-1-fast {
+	100% { 
+		height: 160px; 
+		width: 136px;
+		border-radius: 68px;
+	}
+
+}
+
+.P .squareP-1, .P .squareP-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.P .squareP-1-active{
+	animation: elongateP-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateP-1 {
+	100% { height: 160px; }
+
+}
+
+.P .squareP-1-fast-active{
+	animation: elongateP-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateP-1-fast {
+	100% { height: 160px; }
+
+}
+
+.P .squareP-2, .P .squareP-2-fast{
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.P .squareP-2-active{
+	animation: elongateP-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateP-2 {
+	100% { 
+		height: 112px; 
+		width: 106px; 
+		border-radius: 53px;
+	}
+
+}
+
+.P .squareP-2-fast-active{
+	animation: elongateP-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateP-2-fast {
+	100% { 
+		height: 112px; 
+		width: 106px; 
+		border-radius: 53px;
+	}
+
+}
+
+.R .squareR-1, .R .squareR-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.R .squareR-1-active{
+	animation: elongateR-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateR-1 {
+	100% { height: 160px; }
+
+}
+
+.R .squareR-1-fast-active{
+	animation: elongateR-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateR-1-fast {
+	100% { height: 160px; }
+
+}
+
+.R .squareR-2, .R .squareR-2-fast{
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.R .squareR-2-active{
+	animation: elongateR-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateR-2 {
+	100% { 
+		height: 96px; 
+		width: 96px; 
+		border-radius: 48px;
+	}
+
+}
+
+.R .squareR-2-fast-active{
+	animation: elongateR-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateR-2-fast {
+	100% { 
+		height: 96px; 
+		width: 96px; 
+		border-radius: 48px;
+	}
+
+}
+
+.R .squareR-3, .R .squareR-3-fast{
+	position: absolute;
+	left: 85px;
+	top: 100px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.R .squareR-3-active{
+	animation: elongateR-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+
+}
+
+@keyframes elongateR-3 {
+	100% { 
+		height: 60px; 
+		width: 26px; 
+		transform: skew(40deg);
+	}
+
+}
+
+.R .squareR-3-fast-active{
+	animation: elongateR-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes elongateR-3-fast {
+	100% { 
+		height: 60px; 
+		width: 26px; 
+		transform: skew(40deg);
+	}
+
+}
+
+.H .squareH-1, .H .squareH-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.H .squareH-1-active{
+	animation: elongateH-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateH-1 {
+	100% { height: 160px; }
+
+}
+
+.squareH-1-fast-active{
+	animation: elongate-H-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongate-H-1-fast {
+	100% { height: 160px; }
+}
+
+
+
+.H .squareH-2, .H .squareH-2-fast{
+	position: absolute;
+	left: 30px;
+	top: 65px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.H .squareH-2-active{
+	animation: elongateH-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateH-2 {
+	100% { width: 83px; }
+
+}
+
+.H .squareH-2-fast-active{
+	animation: elongate-H-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongate-H-2-fast {
+	100% { width: 83px; }
+}
+
+.H .squareH-3, .H .squareH-3-fast{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.H .squareH-3-active{
+	animation: elongateH-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateH-3 {
+	100% { height: 160px; }
+
+}
+
+.H .squareH-3-fast-active{
+	animation: elongate-H-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongate-H-3-fast {
+	100% { height: 160px; }
+}
+
+.N .squareN-1, .N .squareN-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.N .squareN-1-active{
+	animation: elongateN-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateN-1 {
+	100% { height: 160px; }
+
+}
+
+.N .squareN-1-fast-active{
+	animation: elongateN-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateN-1-fast {
+	100% { height: 160px; }
+
+}
+
+.N .squareN-2, .N .squareN-2-fast{
+	position: absolute;
+	left: 55px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.N .squareN-2-active{
+	animation: elongateN-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateN-2 {
+	100% { 
+		height: 160px;
+		transform: skew(25deg);
+	 }
+
+}
+
+.N .squareN-2-fast-active{
+	animation: elongateN-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateN-2-fast {
+	100% { 
+		height: 160px;
+		transform: skew(25deg);
+	 }
+
+}
+
+.N .squareN-3, .N .squareN-3-fast{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.N .squareN-3-active{
+	animation: elongateN-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateN-3 {
+	100% { height: 160px; }
+
+}
+
+.N .squareN-3-fast-active{
+	animation: elongateN-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateN-3-fast {
+	100% { height: 160px; }
+
+}
+
+.W .squareW-1, .W .squareW-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.W .squareW-1-active{
+	animation: elongateW-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateW-1 {
+	100% { height: 160px; }
+
+}
+
+.W .squareW-1-fast-active{
+	animation: elongateW-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateW-1-fast {
+	100% { height: 160px; }
+
+}
+
+.W .squareW-2, .W .squareW-2-fast{
+	position: absolute;
+	left: 33px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.W .squareW-2-active{
+	animation: elongateW-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateW-2 {
+	100% { 
+	height: 110px;
+	transform: skew(-22deg);
+	 }
+
+}
+
+.W .squareW-2-fast-active{
+	animation: elongateW-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateW-2-fast {
+	100% { 
+	height: 110px;
+	transform: skew(-22deg);
+	 }
+
+}
+
+.W .squareW-3, .W .squareW-3-fast{
+	position: absolute;
+	right: 33px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.W .squareW-3-active{
+	animation: elongateW-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateW-3 {
+	100% { 
+	height: 110px;
+	transform: skew(22deg);
+	 }
+
+}
+
+.W .squareW-3-fast-active{
+	animation: elongateW-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateW-3-fast {
+	100% { 
+	height: 110px;
+	transform: skew(22deg);
+	 }
+
+}
+
+.W .squareW-4, .W .squareW-4-fast{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.W .squareW-4-active{
+	animation: elongateW-4 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 350s;
+}
+
+@keyframes elongateW-4 {
+	100% { height: 160px; }
+
+}
+
+.W .squareW-4-fast-active{
+	animation: elongateW-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+@keyframes elongateW-4-fast {
+	100% { height: 160px; }
+
+}
+
+
+.L .squareL-1, .L .squareL-1-fast, .L .squareL-1-rainbow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.L .squareL-1-active{
+	animation: elongateL-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateL-1 {
+	100% { height: 160px; }
+
+}
+
+.L .squareL-1-rainbow-active{
+	animation: elongateL-1-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateL-1-rainbow {
+	100% { 
+		height: 160px; 
+		background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.L .squareL-1-fast-active{
+	animation: elongateL-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateL-1-fast {
+	100% { height: 160px; }
+
+}
+
+.L .squareL-2, .L .squareL-2-fast, .L .squareL-2-rainbow{
+	position: absolute;
+	left: 30px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.L .squareL-2-active{
+	animation: elongateL-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateL-2 {
+	100% { width: 85px; }
+
+}
+
+.L .squareL-2-rainbow-active{
+	animation: elongateL-2-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateL-2-rainbow {
+	100% {
+	width: 85px; 
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.L .squareL-2-fast-active{
+	animation: elongateL-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateL-2-fast {
+	100% { width: 85px; }
+
+}
+
+
+.E .squareE-1, .E .squareE-1-fast, .E .squareE-1-rainbow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.E .squareE-1-active{
+	animation: elongateE-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateE-1 {
+	100% { height: 160px; }
+
+}
+
+.E .squareE-1-rainbow-active{
+	animation: elongateE-1-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateE-1-rainbow {
+	100% {
+	height: 160px; 
+	background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.E .squareE-1-fast-active{
+	animation: elongateE-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateE-1-fast {
+	100% { height: 160px; }
+
+}
+
+.E .squareE-2, .E .squareE-2-fast, .E .squareE-2-rainbow{
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.E .squareE-2-active{
+	animation: elongateE-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateE-2 {
+	100% { width: 90px; }
+
+}
+
+.E .squareE-2-rainbow-active{
+	animation: elongateE-2-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateE-2-rainbow {
+	100% { 
+	width: 90px; 
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.E .squareE-2-fast-active{
+	animation: elongateE-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateE-2-fast {
+	100% { width: 90px; }
+
+}
+
+.E .squareE-3, .E .squareE-3-fast, .E .squareE-3-rainbow{
+	position: absolute;
+	left: 30px;
+	top: 70px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.E .squareE-3-active{
+	animation: elongateE-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateE-3 {
+	100% { width: 60px; }
+
+}
+
+.E .squareE-3-rainbow-active{
+	animation: elongateE-3-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateE-3-rainbow {
+	100% { 
+	width: 60px; 
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.E .squareE-3-fast-active{
+	animation: elongateE-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateE-3-fast {
+	100% { width: 60px; }
+
+}
+
+.E .squareE-4, .E .squareE-4-fast, .E .squareE-4-rainbow{
+	position: absolute;
+	left: 30px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.E .squareE-4-active{
+	animation: elongateE-4 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 350s;
+}
+
+@keyframes elongateE-4 {
+	100% { width: 90px; }
+
+}
+
+.E .squareE-4-rainbow-active{
+	animation: elongateE-4-rainbow 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 350s;
+}
+
+@keyframes elongateE-4-rainbow {
+	100% { 
+	width: 90px; 
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	}
+
+}
+
+.E .squareE-4-fast-active{
+	animation: elongateE-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+}
+
+@keyframes elongateE-4-fast {
+	100% { width: 90px; }
+
+}
+
+.D .squareD-1, .D .squareD-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.D .squareD-1-active{
+	animation: elongateD-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateD-1 {
+	100% { height: 160px; }
+
+}
+
+.D .squareD-1-fast-active{
+	animation: elongateD-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateD-1-fast {
+	100% { height: 160px; }
+
+}
+
+.D .squareD-2, .D .squareD-2-fast{
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.D .squareD-2-active{
+	animation: elongateD-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateD-2 {
+	100% { 
+	width: 106px;
+	height: 160px; 
+	border-top-right-radius: 160px;
+	border-bottom-right-radius: 160px;
+	}
+
+}
+
+.D .squareD-2-fast-active{
+	animation: elongateD-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateD-2-fast {
+	100% { 
+	width: 106px;
+	height: 160px; 
+	border-top-right-radius: 160px;
+	border-bottom-right-radius: 160px;
+	}
+
+}
+
+.B .squareB-1, .B .squareB-1-fast{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.B .squareB-1-active{
+	animation: elongateB-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateB-1 {
+	100% { height: 160px; }
+
+}
+
+.B .squareB-1-fast-active{
+	animation: elongateB-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateB-1-fast {
+	100% { height: 160px; }
+
+}
+
+.B .squareB-2, .B .squareB-2-fast{
+	position: absolute;
+	left: 30px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.B .squareB-2-active{
+	animation: elongateB-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateB-2 {
+	100% { 
+	width: 76px;
+	height: 76px; 
+	border-radius: 38px;
+	}
+
+}
+
+.B .squareB-2-fast-active{
+	animation: elongateB-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateB-2-fast {
+	100% { 
+	width: 76px;
+	height: 76px; 
+	border-radius: 38px;
+	}
+
+}
+
+.B .squareB-3, .B .squareB-3-fast{
+	position: absolute;
+	left: 30px;
+	top: 60px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.B .squareB-3-active{
+	animation: elongateB-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+}
+
+@keyframes elongateB-3 {
+	100% { 
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	}
+
+}
+
+.B .squareB-3-fast-active{
+	animation: elongateB-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+}
+
+@keyframes elongateB-3-fast {
+	100% { 
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	}
+
+}
+
+.G .squareG-1, .G .squareG-1-fast{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.G .squareG-1-active{
+	animation: elongateG-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateG-1 {
+	100% { width: 106px; }
+
+}
+
+.G .squareG-1-fast-active{
+	animation: elongateG-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes elongateG-1-fast {
+	100% { width: 106px; }
+
+}
+
+.G .squareG-2, .G .squareG-2-fast{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.G .squareG-2-active{
+	animation: elongateG-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+}
+
+@keyframes elongateG-2 {
+	100% { height: 160px; }
+
+}
+
+.G .squareG-2-fast-active{
+	animation: elongateG-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+}
+
+@keyframes elongateG-2-fast {
+	100% { height: 160px; }
+
+}
+
+.G .squareG-3, .G .squareG-3-fast{
+	position: absolute;
+	left: 30px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.G .squareG-3-active{
+	animation: elongateG-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+	/*opacity: 0.5;*/
+}
+
+@keyframes elongateG-3 {
+	100% { width: 80px; }
+
+}
+
+.G .squareG-3-fast-active{
+	animation: elongateG-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+	/*opacity: 0.5;*/
+}
+
+@keyframes elongateG-3-fast {
+	100% { width: 80px; }
+
+}
+
+.G .squareG-4, .G .squareG-4-fast{
+	position: absolute;
+	left: 105px;
+	bottom: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.G .squareG-4-active{
+	animation: elongateG-4 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 350s;
+	/*opacity: 0.5;*/
+}
+
+@keyframes elongateG-4 {
+	100% { height: 65px; }
+
+}
+
+.G .squareG-4-fast-active{
+	animation: elongateG-4-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 12s;
+	/*opacity: 0.5;*/
+}
+
+@keyframes elongateG-4-fast {
+	100% { height: 65px; }
+
+}
+
+.G .squareG-5, .G .squareG-5-fast{
+	position: absolute;
+	left: 71px;
+	bottom: 60px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.G .squareG-5-active{
+	animation: elongateG-5 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 470s;
+}
+
+@keyframes elongateG-5 {
+	100% { width: 65px; }
+
+}
+
+.G .squareG-5-fast-active{
+	animation: elongateG-5-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 15s;
+}
+
+@keyframes elongateG-5-fast {
+	100% { width: 65px; }
+
+}
+
+.A .squareA-1, .A .squareA-1-fast{
+	position: absolute;
+	left: 80px;
+	top: 0px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.A .squareA-1-active{
+	animation: elongateA-1 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+
+}
+
+@keyframes elongateA-1 {
+	100% { 
+		height: 160px; 
+		transform: skew(22deg);
+	}
+
+}
+
+.A .squareA-1-fast-active{
+	animation: elongateA-1-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+
+}
+
+@keyframes elongateA-1-fast {
+	100% { 
+		height: 160px; 
+		transform: skew(22deg);
+	}
+
+}
+
+.A .squareA-2, .A .squareA-2-fast{
+	position: absolute;
+	left: 29px;
+	top: 24px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.A .squareA-2-active{
+	animation: elongateA-2 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 110s;
+
+}
+
+@keyframes elongateA-2 {
+	100% { 
+		height: 136px; 
+		transform: skew(-23deg);
+	}
+
+}
+
+.A .squareA-2-fast-active{
+	animation: elongateA-2-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 6s;
+
+}
+
+@keyframes elongateA-2-fast {
+	100% { 
+		height: 136px; 
+		transform: skew(-23deg);
+	}
+
+}
+
+.A .squareA-3, .A .squareA-3-fast{
+	position: absolute;
+	left: 56px;
+	top: 104px;
+	width: 24px;
+	height: 24px;
+	background: black;
+}
+
+.A .squareA-3-active{
+	animation: elongateA-3 120s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 230s;
+
+}
+
+@keyframes elongateA-3 {
+	100% { 
+		border-radius: 12px; 
+		
+	}
+
+.A .squareA-3-fast-active{
+	animation: elongateA-3-fast 11s 1;
+	animation-fill-mode: forwards;
+	animation-delay: 9s;
+
+}
+
+@keyframes elongateA-3-fast {
+	100% { 
+		border-radius: 12px; 
+		
+	}
+
+
+
+
+
+
+
+.hide { display: none; }
+
+.opacity {opacity: 0}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../font/Alegreya/Alegreya-Regular.ttf);
+}
+
+
+.running {
+	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;
+}
+
+@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}
+
+
+.fade-out{
+	opacity: 1;
+	animation: fade 0.2s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+
+}
+
+
+
+
+
