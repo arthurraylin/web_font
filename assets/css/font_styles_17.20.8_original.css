@@ -15,7 +15,7 @@ body{
 	top: 0;
 	left: 0;
 	height: 30px;*/
-	cursor: url('../img/loading_13pt.cur'), auto;
+	cursor: url(../img/loading_13pt.cur), auto;
 }
 
 .sentence-seperation1, .sentence-seperation2,.sentence-seperation3,.sentence-seperation4{
